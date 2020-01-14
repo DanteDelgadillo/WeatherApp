@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Swal from "sweetalert2";
 
-const api = {
-  key: `${process.env.REACT_APP_API_KEY}`,
-  base: `${process.env.REACT_APP_API}`
-}
+
 
 
 function App() {
@@ -16,7 +13,7 @@ function App() {
 
   const search = evt => {
     if (evt.key === "Enter") {
-      axios.get(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+      axios.get(`$${process.env.REACT_APP_API}weather?q=${query}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
         .then(response => {
           setQuery('');
           setWeather(response.data);
