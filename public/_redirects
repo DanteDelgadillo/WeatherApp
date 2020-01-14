@@ -1,5 +1,5 @@
 [[redirects]]
 from = "https://wizardly-nobel-49c92b.netlify.com/api.openweathermap.org/data/2.5/weather?q=burbank&units=metric&APPID=ac520234facdd7bb8b258738bac19fb9"
-to = "https:/api.openweathermap.org/data/2.5/"
+to = "https:/api.openweathermap.org/splat"
 status = 200
 force =true
