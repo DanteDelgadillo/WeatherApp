@@ -13,7 +13,7 @@ function App() {
 
   const search = evt => {
     if (evt.key === "Enter") {
-      axios.get(`$${process.env.REACT_APP_API}weather?q=${query}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
+      axios.get(`${process.env.REACT_APP_API}weather?q=${query}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
         .then(response => {
           setQuery('');
           setWeather(response.data);
